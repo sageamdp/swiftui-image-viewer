@@ -79,7 +79,7 @@ public struct ImageViewer: View {
                         )
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(.black).edgesIgnoringSafeArea(.all))
+                    .background(.black)
                     .zIndex(1)
                 }
                 //.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.2)))
