@@ -79,10 +79,10 @@ public struct ImageViewer: View {
                         )
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color(red: 0.12, green: 0.12, blue: 0.12, opacity: (1.0 - Double(abs(self.dragOffset.width) + abs(self.dragOffset.height)) / 1000)).edgesIgnoringSafeArea(.all))
+                    //.background(Color(red: 0.12, green: 0.12, blue: 0.12, opacity: (1.0 - Double(abs(self.dragOffset.width) + abs(self.dragOffset.height)) / 1000)).edgesIgnoringSafeArea(.all))
                     .zIndex(1)
                 }
-                .transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.2)))
+                //.transition(AnyTransition.opacity.animation(.easeInOut(duration: 0.2)))
                 .onAppear() {
                     self.dragOffset = .zero
                     self.dragOffsetPredicted = .zero
