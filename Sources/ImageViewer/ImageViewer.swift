@@ -163,9 +163,9 @@ class PinchZoomView: UIView {
 
         case .ended, .cancelled, .failed:
             isPinching = false
-            scale = 1.0
-            anchor = .center
-            offset = .zero
+            //scale = 1.0
+            //anchor = .center
+            //offset = .zero
         default:
             break
         }
